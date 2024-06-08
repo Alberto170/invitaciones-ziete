@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="public/images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fe42810215.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/output.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- Nav Section -->
+        <nav id="header" class="w-full z-30 top-0">
+            <div class="w-full mx-auto flex flex-wrap items-center justify-between mt-0 py-2 max-w-screen-xl sm:py-5">
+                <div class="pl-4 flex items-center">
+                    <a href="/" class="flex items-center">
+                        <img src="/public/images/ziete-logo.webp" class="h-9 mr-2 sm:h-9" alt="Invitacionez Ziete Logo"
+                            loading="eager" title="Eric price logo" title="Invitacionez Ziete Logo" />
+                    </a>
+                </div>
+                <div class="block lg:hidden pr-4">
+                    <button id="nav-toggle" name="toggle"
+                        class="flex items-center p-1 text-black focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                        <i class="fa-solid fa-bars text-2xl">
+                            <title>Menu</title>
+                        </i>
+                    </button>
+                </div>
+                <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 lg:bg-transparent p-4 lg:p-0 z-20"
+                    id="nav-content">
+                    <ul class="list-reset lg:flex justify-end flex-1 items-center">
+                        <li class="mr-1">
+                            <a class="inline-block no-underline hover:text-underline py-2 px-4 text-black"
+                                href="#home">Inicio</a>
+                        </li>
+                        <li class="mr-1">
+                            <a class="inline-block no-underline hover:text-underline py-2 px-4 text-black"
+                                href="#services">Servicios</a>
+                        </li>
+                        <li class="mr-1">
+                            <a class="inline-block no-underline hover:text-underline py-2 px-4 text-black"
+                                href="#aboutus">Nosotros</a>
+                        </li>
+                        <li class="mr-1">
+                            <a class="inline-block no-underline hover:text-underline py-2 px-4 text-black"
+                                href="#faq">FAQ</a>
+                        </li>
+                        <li class="mr-1">
+                            <a class="inline-block no-underline hover:text-underline py-2 px-4 text-black"
+                                href="#contact">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="flex flex-col items-center lg:justify-around lg:flex-row px-4 mx-auto max-w-screen-xl lg:mt-9">
+            <section class="lg:w-1/2 lg:pt-12 text-center lg:text-left space-y-9">
+                <h1 class="text-[60px] lg:text-[80px] text-[#E3867D] mt-8 leading-[5rem] lg:leading-[6rem] font-bold">
+                    Invitaciones Digitales para tus eventos
+                </h1>
+                <p class="mt-9 text-xl">
+                    Desde cumpleaños hasta bodas, seguramente impresionaras a tus invitados.
+                </p>
+                <div class="flex flex-row gap-4 items-center mt-9 lg:flex-col lg:items-start">
+                    <button name="phoneNumber"
+                        class="w-11/12 mx-auto lg:mx-0 lg:w-2/5 bg-[#E3867D] text-white font-semibold py-6 px-4 rounded">
+                        <a href="tel:(111)1111111 class=" text-xl">
+                            <i class="fa-solid fa-phone"></i>
+                            Contactanos hoy
+                        </a>
+                    </button>
+                </div>
+            </section>
+            <section class="lg:w-1/2 p-3 mt-9 lg:mt-0" data-aos="fade-up">
+                <img src="/public/images/hero.png" alt="Hero picture" class="" loading="eager" title="Hero image">
+            </section>
+        </div>
+    </header>
+
+    <main class="flex flex-col gap-20">
+        <!-- about us 24, 50, 18-->
+        <section class="bg-[#F9F8FE] mt-20">
+            <div
+                class="mx-auto max-w-screen-xl p-6 flex flex-col justify-center lg:justify-between items-center lg:flex-row gap-9">
+                <div class="flex flex-col gap-9 lg:w-1/2">
+                    <p class="text-2xl text-[#E3867D]">Sobre Nosotros</p>
+                    <h2 class="text-[50px] font-medium text-center lg:text-left">¿Por que confiar en nosotros?</h2>
+                    <p class="text-[18px] text-center lg:text-left">
+                        Creemos en la importancia del diseño personalizado. Por eso, ofrecemos una amplia gama de
+                        plantillas
+                        modernas y elegantes que puedes elegir para que se adapten a tu estilo y temática del evento.
+                        ¿Quieres añadir una foto? ¿Cambiar los colores? ¿Agregar texto personalizado? ¡No hay problema!
+                        Nosotros podemos ayudarte en todo.
+                    </p>
+                    <button name="phoneNumber"
+                        class="w-11/12 mx-auto lg:mx-0 lg:w-2/5 bg-[#E3867D] text-white font-semibold py-6 px-4 rounded">
+                        <a href="tel:(111)1111111 class=" text-xl">
+                            <i class="fa-solid fa-phone"></i>
+                            Mandar Mensaje
+                        </a>
+                    </button>
+                </div>
+                <div class="flex flex-col gap-9 lg:gap-12">
+                    <div class="flex items-center gap-6">
+                        <i class="fa-solid fa-check  bg-white text-[#5CAC40] shadow-xl rounded-full p-2"></i>
+                        <span class="text-xl lg:text-2xl">Diseño personalizado</span>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <i class="fa-solid fa-check  bg-white text-[#5CAC40] shadow-xl rounded-full p-2"></i>
+                        <span class="text-xl lg:text-2xl">Atención de inicio a fin</span>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <i class="fa-solid fa-check  bg-white text-[#5CAC40] shadow-xl rounded-full p-2"></i>
+                        <span class="text-xl lg:text-2xl">Entregas a tiempo</span>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <i class="fa-solid fa-check  bg-white text-[#5CAC40] shadow-xl rounded-full p-2"></i>
+                        <span class="text-xl lg:text-2xl">Revisiones y reuniones uno a uno</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios -->
+        <section class="mx-auto max-w-screen-xl p-6 flex flex-col gap-9">
+            <p class="text-2xl text-[#E3867D]">Servicios</p>
+            <h2 class="text-[50px] font-medium text-center lg:text-left">Beneficios de tu <br> invitacion digital</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-9">
+                <div class="flex gap-6 items-start">
+                    <div class="bg-[#E3867D] py-3 px-4 shadow-lg rounded-md">
+                        <i class="fa-solid fa-share-nodes text-xl" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="font-bold text-2xl">Comparte sin limite</h3>
+                        <p class="text-[18px]">
+                            Gracias al link personalizado que te proporcionamos, puedes compartir tu invitación a todas
+                            las personas que necesites sin ningún limite.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-6 items-start">
+                    <div class="bg-[#E3867D] py-3 px-4 shadow-lg rounded-md">
+                        <i class="fa-solid fa-dollar-sign text-xl" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="font-bold text-2xl">Presupuesto a la medida</h3>
+                        <p class="text-[18px]">
+                            No hay necesidad de gastar dinero en impresiónes y además, ofrecemos opciones asequibles que
+                            se adaptan a cualquier presupuesto.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-6 items-start">
+                    <div class="bg-[#E3867D] py-3 px-4 shadow-lg rounded-md">
+                        <i class="fa-solid fa-leaf text-xl" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="font-bold text-2xl">Eco-amigable</h3>
+                        <p class="text-[18px]">
+                            Al usar invitaciones digitales, estás contribuyendo a la conservación del medio ambiente al
+                            reducir el consumo de papel
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-6 items-start">
+                    <div class="bg-[#E3867D] py-3 px-4 shadow-lg rounded-md">
+                        <i class="fa-solid fa-pen-to-square text-xl" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="font-bold text-2xl">Personalización total</h3>
+                        <p class="text-[18px]">
+                            Completamente personalizadas para adaptarse a tu estilo Añade fotos, cambia los colores y
+                            elige entre una variedad de estilos y diseños.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-6 items-start">
+                    <div class="bg-[#E3867D] py-3 px-4 shadow-lg rounded-md">
+                        <i class="fa-regular fa-paper-plane text-xl" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="font-bold text-2xl">Entrega instantánea</h3>
+                        <p class="text-[18px]">
+                            Envía tus invitaciones al instante por correo electrónico, mensajes de texto o compártelas
+                            en redes sociales.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-6 items-start">
+                    <div class="bg-[#E3867D] py-3 px-4 shadow-lg rounded-md">
+                        <i class="fa-solid fa-photo-film text-xl" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="font-bold text-2xl">Interactividad</h3>
+                        <p class="text-[18px]">
+                            Nuestras invitaciones digitales pueden incluir enlaces a mapas, listas de reproducción de
+                            música y más, agregando un toque interactivo que tus invitados apreciarán.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <!-- <section class="mx-auto max-w-screen-xl p-6 flex flex-col gap-9">
+            <p class="text-2xl text-[#E3867D]">Portafolio</p>
+            <h2 class="text-[50px] font-medium text-center lg:text-left">
+                Revisa algunas de <br> nuestras invitaciones
+            </h2>
+            <div class="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-9">
+                <div>
+                    <a href="">
+                        <img src="/public/images/demo.png" alt="">
+                    </a>
+                </div>
+
+                <div>
+                    <a href="">
+                        <img src="/public/images/demo.png" alt="">
+                    </a>
+                </div>
+
+                <div>
+                    <a href="">
+                        <img src="/public/images/demo.png" alt="">
+                    </a>
+                </div>
+
+                <div>
+                    <a href="">
+                        <img src="/public/images/demo.png" alt="">
+                    </a>
+                </div>
+
+                <div>
+                    <a href="">
+                        <img src="/public/images/demo.png" alt="">
+                    </a>
+                </div>
+
+                <div>
+                    <a href="">
+                        <img src="/public/images/demo.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- CTA -->
+        <section class="mx-auto max-w-screen-xl text-center cta rounded-lg">
+            <div class="text-center space-y-9 py-16 px-9 text-white">
+                <h2 class="font-bold text-4xl">
+                    haz que tu evento destaque desde el principio!
+                </h2>
+                <p class="text-xl">
+                    Diseña tus invitaciones digitales ahora y sorprende a tus invitados. Comienza hoy mismo
+                </p>
+                <button name="phoneNumber"
+                    class="w-11/12 mx-auto lg:mx-0 lg:w-2/5 bg-[#E3867D] text-white font-semibold py-6 px-4 rounded">
+                    <a href="tel:+526612675345" class=" text-xl">
+                        <i class="fa-solid fa-phone"></i>
+                        Contactar
+                    </a>
+                </button>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="py-10 sm:py-16 lg:py-24 text-center">
+            <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+                <div class="max-w-2xl mx-auto text-center">
+                    <p class="text-2xl text-[#E3867D]">Preguntas Frecuentes</p>
+                    <h2 class="text-[50px] font-medium text-center">
+                        ¿Tienes algunas preguntas que hacernos?
+                    </h2>
+                </div>
+                <!-- max-w-3xl -->
+                <div class="max-w-screen-xl mx-auto mt-8 space-y-4 md:mt-16">
+                    <!-- question #1 -->
+                    <div class="transition-all duration-200 border border-[#E3867D] shadow-lg cursor-pointer">
+                        <button type="button" id="question1" data-state="closed"
+                            class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                            <span class="flex text-lg font-semibold text-[#E3867D]">
+                                ¿Qué son las invitaciones digitales?
+                            </span>
+                            <svg id="arrow1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="w-6 h-6 text-[#E3867D]">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="answer1" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
+                            <p>
+                                Las invitaciones digitales son versiones electrónicas de las tradicionales invitaciones
+                                impresas. Se envían por correo electrónico, mensajes de texto o se comparten a través de
+                                redes sociales.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- question #2 -->
+                    <div class="transition-all duration-200 border border-[#E3867D] shadow-lg cursor-pointer">
+                        <button type="button" id="question2" data-state="closed"
+                            class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                            <span class="flex text-[16px] font-semibold text-[#E3867D]">¿Cuáles son las ventajas de las
+                                invitaciones digitales sobre las invitaciones impresas?</span>
+                            <svg id="arrow2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="w-16 h-6 text-[#E3867D]">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="answer2" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
+                            <p>
+                                Las invitaciones digitales ofrecen una serie de ventajas, incluyendo la personalización
+                                fácil y rápida, la capacidad de enviarlas instantáneamente a través de múltiples
+                                plataformas y la posibilidad de incorporar elementos interactivos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- question #3 -->
+                    <div class="transition-all duration-200 border border-[#E3867D] shadow-lg cursor-pointer">
+                        <button type="button" id="question3" data-state="closed"
+                            class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                            <span class="flex text-lg font-semibold text-[#E3867D]">¿Cómo se entregan las invitaciones
+                                digitales a mis invitados?</span>
+                            <svg id="arrow3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="w-16 h-6 text-[#E3867D]">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="answer3" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
+                            <p>
+                                Puedes enviar tus invitaciones digitales por correo electrónico, mensajes de texto o
+                                compartir el enlace en redes sociales. También ofrecemos códigos QR para facilitar el
+                                acceso a las invitaciones desde dispositivos móviles.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- question #4 -->
+                    <div class="transition-all duration-200 border border-[#E3867D] shadow-lg cursor-pointer">
+                        <button type="button" id="question4" data-state="closed"
+                            class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                            <span class="flex text-lg font-semibold text-[#E3867D]">¿Es seguro enviar invitaciones
+                                digitales?</span>
+                            <svg id="arrow4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="w-16 h-6 text-[#E3867D]">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="answer4" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
+                            <p>
+                                Sí, nuestras invitaciones digitales están diseñadas con los más altos estándares de
+                                seguridad para proteger la privacidad de tus datos y la de tus invitados. Puedes confiar
+                                en que tu información estará segura.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- question #5 -->
+                    <div class="transition-all duration-200 border border-[#E3867D] shadow-lg cursor-pointer">
+                        <button type="button" id="question5" data-state="closed"
+                            class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                            <span class="flex text-lg font-semibold text-[#E3867D]">¿Qué tipo de eventos son adecuados
+                                para las invitaciones digitales?</span>
+                            <svg id="arrow5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="w-10 h-6 text-[#E3867D]">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="answer5" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
+                            <p>
+                                Las invitaciones digitales son ideales para una amplia gama de eventos, desde fiestas de
+                                cumpleaños y bodas hasta reuniones corporativas y lanzamientos de productos. Son
+                                versátiles y se adaptan a cualquier ocasión.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a
+                    href="https://wa.me/526861969698?text=Hola%20mucho%20gusto%2C%20quisiera%20pedir%20mas%20informacion%20sobre%20sus%20invitaciones%20digitales%20para%20mi%20proximo%20evento">
+                    <p class="text-center text-gray-600 textbase mt-9">
+                        ¿Todavia tienes dudas?
+                        <span
+                            class="cursor-pointer font-medium text-tertiary transition-all duration-200 hover:text-tertiary focus:text-tertiary underline">
+                            mandan un mensaje
+                        </span>
+                    </p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Conctact -->
+        <section class="bg-[#F9F8FE]">
+            <div class="mx-auto max-w-screen-xl flex flex-col items-center justify-center lg:flex-row gap-9 p-9 lg:p-0">
+                <div class="lg:w-1/2 space-y-9">
+                    <h2 class="text-[50px]">¡Contáctanos!</h2>
+                    <p class="text-lg">
+                        ¿Listo para dar el primer paso hacia la creación de invitaciones digitales espectaculares para
+                        tu
+                        próximo evento? ¡Estamos aquí para ayudarte! Ya sea que tengas preguntas, comentarios o
+                        simplemente
+                        quieras más información sobre nuestros servicios, no dudes en ponerte en contacto con nosotros.
+                    </p>
+                    <div class="text-lg">
+                        <a href="tel:+526612675345">
+                            <i class="fa-solid fa-mobile-screen-button">
+                            </i>
+                            <span class="font-normal ml-1">661 267 53 45</span>
+                        </a>
+                    </div>
+                    <div class="text-lg">
+                        <a
+                            href="mailto:info@invitacionesziete.com?subject=Consulta&body=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20sus%20servicios.">
+                            <i class="fa-regular fa-envelope">
+                            </i>
+                            <span class="font-normal ml-1">
+                                info@invitacionesziete.com
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-8 space-y-9 w-11/12 text-center">
+                    <img src="/public/images/ziete-logo.webp" alt="" class="mx-auto">
+                    <p>Manda tu mensaje para que podamos ayudarte con todo lo que necesitas</p>
+                    <button name="phoneNumber"
+                        class="w-11/12 mx-auto lg:mx-0 lg:w-2/5 bg-[#E3867D] text-white font-semibold py-6 px-3 rounded text-xl">
+                        <a
+                            href="https://wa.me/526861969698?text=Hola%20mucho%20gusto%2C%20quisiera%20pedir%20mas%20informacion%20sobre%20sus%20invitaciones%20digitales%20para%20mi%20proximo%20evento">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            Mandar Mensaje
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white rounded-lg shadow m-4 mt-20">
+        <div class="mx-auto max-w-screen-xl md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <img src="/public/images/ziete-logo.webp" class="h-8" alt="Flowbite Logo" />
+                </a>
+                <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0">
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">Politica de Privacidad</a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@invitacionesziete.com?subject=Consulta&body=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20sus%20servicios."
+                            class="hover:underline">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="my-6 sm:mx-auto border-gray-700 lg:my-8" />
+            <span class="block text-sm text-gray-500 sm:text-center">© 2024 <a href="/" Ï
+                    class="hover:underline">Ziete</a>. Todos los derechos reservados.</span>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="/js/nav.js"></script>
+    <script src="/js/toggle.js"></script>
+    <script src="/js/faq.js"></script>
+</body>
+
+</html>
